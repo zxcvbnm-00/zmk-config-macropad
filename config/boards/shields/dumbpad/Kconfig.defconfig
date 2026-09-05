@@ -3,4 +3,10 @@ if SHIELD_DUMBPAD
 config ZMK_KEYBOARD_NAME
     default "MACROPAD"
 
+config ZMK_KSCAN_DEBOUNCE_PRESS_MS
+    default 5
+
+config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
+    default 5
+
 endif
