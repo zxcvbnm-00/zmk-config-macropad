@@ -1,0 +1,6 @@
+if SHIELD_DUMBPAD
+
+config ZMK_KEYBOARD_NAME
+    default "MACROPAD"
+
+endif
