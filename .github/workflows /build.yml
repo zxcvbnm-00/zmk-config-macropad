@@ -1,7 +1,10 @@
-name: Build ZMK firmware
+name: Build ZMK Firmware
 
 on:
   push:
+    paths-subset:
+      - 'config/**'
+      - 'build.yaml'
   workflow_dispatch:
 
 jobs:
