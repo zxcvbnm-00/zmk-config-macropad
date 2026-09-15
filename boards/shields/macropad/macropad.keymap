@@ -11,21 +11,14 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Layout Matriks:
-            // SW00  SW01  SW02  SW03
-            // SW10  SW11  SW12  SW13
-            // SW20  SW21  SW22  SW23
-            // SW30  SW31  SW32  SW33
-            // EncSW
             bindings = <
-                &kp KP_N7    &bt BT_CLR   &bt BT_SEL 0   &out OUT_BLE
-                &kp KP_N4    &kp KP_N5    &out OUT_TOG      &out OUT_USB
-                &kp KP_N1    &kp KP_N2    &kp KP_N3      &kp KP_ENTER
-                &kp A        &kp KP_N0    &kp KP_DOT     &kp BSPC
-                &kp C_MUTE
+                &kp A        &kp B        &kp C        &kp D
+                &kp E        &kp F        &kp G        &kp H
+                &kp I        &kp J        &kp K        &kp L
+                &kp M        &bt BT_CLR   &bt BT_SEL 0 &out OUT_BLE
+                &kp N
             >;
 
-            // Pengaturan putaran encoder (CW: Vol Up, CCW: Vol Down)
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
